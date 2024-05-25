@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.module.scss";
 import Layout from "./Pages/Layout/Layout.tsx";
-import AdminPage from "./Pages/AdminPage.tsx";
+import AdminPage from "./Pages/Dashboard/AdminPage.tsx";
 
 function App() {
   return (

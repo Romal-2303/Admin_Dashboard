@@ -1,3 +1,5 @@
+@import "./colors.module";
+
 // Grid Layout
 .grid-columns-4 {
   display: grid;
@@ -60,4 +62,6 @@
 
 .card {
   border-radius: 4px;
+  background-color: $lightNavyBlue;
+  padding: 1rem;
 }
