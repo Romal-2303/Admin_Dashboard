@@ -5,7 +5,9 @@ import Layout from "./Pages/Layout/Layout.tsx";
 function App() {
   return (
     <div className="App">
-      <Layout></Layout>
+      <Layout>
+        <div>Hello</div>
+      </Layout>
     </div>
   );
 }
