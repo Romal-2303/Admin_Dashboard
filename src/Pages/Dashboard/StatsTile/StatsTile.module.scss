@@ -1,0 +1,47 @@
+@import "../../../DesignSystem/colors.module";
+
+.stats-tile-container {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  font-family: "Archivo", sans-serif;
+
+  .section-1 {
+    .stats-tile-header {
+      font-size: 12px;
+      letter-spacing: 0.3px;
+      color: #a3acb5;
+      margin-bottom: 1rem;
+      margin-top: 1rem;
+    }
+
+    .stats-tile-value {
+      font-size: 35px;
+      color: #ced6dd;
+    }
+  }
+
+  .section-2 {
+    .stats-tile-graph-container {
+      height: 70px;
+      width: 140px;
+    }
+
+    .stats-tile-percentage {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .stats-tile-percentage-icon {
+        margin-right: 0.2rem;
+      }
+
+      .stats-tile-percentage-value-increment {
+        color: $successColor;
+      }
+      .stats-tile-percentage-value-decrement {
+        color: $failureColor;
+      }
+    }
+  }
+}
