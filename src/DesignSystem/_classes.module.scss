@@ -1,0 +1,63 @@
+// Grid Layout
+.grid-columns-4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+.grid-columns-5 {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+}
+.grid-columns-6 {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 1rem;
+}
+.grid-columns-7 {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 1rem;
+}
+.grid-columns-8 {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 1rem;
+}
+.grid-columns-10 {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  gap: 1rem;
+}
+
+.column-span-1 {
+  grid-column: span 1;
+}
+
+.column-span-2 {
+  grid-column: span 2;
+}
+
+.column-span-3 {
+  grid-column: span 3;
+}
+
+.column-span-4 {
+  grid-column: span 4;
+}
+
+.column-span-5 {
+  grid-column: span 5;
+}
+
+.column-span-6 {
+  grid-column: span 6;
+}
+
+.row-1 {
+  grid-row: span 1;
+}
+
+.card {
+  border-radius: 4px;
+}

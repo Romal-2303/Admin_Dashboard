@@ -1,20 +1,22 @@
+@import "../../../DesignSystem/colors.module";
+
 .header-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #333742;
+  background-color: $lightNavyBlue;
   color: white;
   padding: 0.8rem 1rem;
 
   .header-logo-container {
-    background-color: #333742;
+    background-color: $lightNavyBlue;
   }
 
   .header-action-btns-container {
     display: flex;
     align-items: center;
     gap: 1rem;
-    background-color: #333742;
+    background-color: $lightNavyBlue;
 
     .search-input-container {
       .search-input {
