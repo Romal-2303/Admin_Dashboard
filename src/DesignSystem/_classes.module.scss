@@ -1,6 +1,21 @@
 @import "./colors.module";
 
 // Grid Layout
+.grid-columns-1 {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1rem;
+}
+.grid-columns-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+.grid-columns-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
 .grid-columns-4 {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -64,4 +79,12 @@
   border-radius: 4px;
   background-color: $lightNavyBlue;
   padding: 1rem;
+}
+
+.chart-header {
+  font-family: "Archivo", sans-serif;
+  color: #b8b8b8;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 1rem;
 }

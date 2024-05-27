@@ -4,10 +4,35 @@
   width: calc(100vw - 200px);
   // height: 100vw;
   height: calc(100vh - 86px);
+  overflow-y: scroll;
 
   padding: 1rem;
   background-color: $darkNavyBlue;
 
   .admin-dashboard-content {
+  }
+
+  .utilities-container {
+    margin-top: 1rem;
+
+    .revenue-container {
+      .piechart-container {
+        margin-top: 2rem;
+        height: 250px;
+      }
+    }
+  }
+
+  .polar-map-container-parent {
+    margin-top: 1rem;
+
+    .polar-chart-text-container {
+      .polar-chart-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 450px;
+      }
+    }
   }
 }

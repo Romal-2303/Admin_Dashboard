@@ -2,6 +2,11 @@ import React from "react";
 import classes from "./Admin.module.scss";
 import styles from "../../DesignSystem/_classes.module.scss";
 import StatsTile from "./StatsTile/StatsTile.tsx";
+import Map from "../../Components/graphs/Map/Map.tsx";
+import PolarAreaChart from "../../Components/graphs/PolarAreaChart/PolarAreaChart.tsx";
+import TaskTile from "./TaskTile/TaskTile.tsx";
+import TopPerformers from "../../Components/graphs/TopPerformers/TopPerformers.tsx";
+import PieChart from "../../Components/graphs/PieChart/PieChart.tsx";
 
 interface statsTileProps {
   header?: string;
@@ -52,6 +57,40 @@ const AdminPage = () => {
             percentValue={tile.percentValue}
           />
         ))}
+      </div>
+      <div
+        className={`${styles["grid-columns-4"]} ${classes["polar-map-container-parent"]}`}
+      >
+        <div
+          className={`${styles["card"]} ${styles["column-span-2"]} ${classes["polar-chart-text-container"]}`}
+        >
+          <div className={styles["chart-header"]}>Sales by category</div>
+          <div className={classes["polar-chart-container"]}>
+            <PolarAreaChart />
+          </div>
+        </div>
+        <Map />
+      </div>
+      <div
+        className={`${styles["grid-columns-3"]} ${classes["utilities-container"]}`}
+      >
+        <div className={`${styles["card"]} ${styles["column-span-1"]}`}>
+          <TaskTile />
+        </div>
+        <div
+          className={`${styles["card"]} ${styles["column-span-1"]} ${classes["traffic-sources-container"]}`}
+        >
+          <div className={styles["chart-header"]}>Traffic Sources</div>
+          <TopPerformers />
+        </div>
+        <div
+          className={`${styles["card"]} ${styles["column-span-1"]} ${classes["revenue-container"]}`}
+        >
+          <div className={styles["chart-header"]}>Total Revenue ($)</div>
+          <div className={classes["piechart-container"]}>
+            <PieChart />
+          </div>
+        </div>
       </div>
     </div>
   );
