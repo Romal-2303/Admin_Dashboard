@@ -3,6 +3,18 @@
   width: calc(100vw - 200px);
   height: 100%;
   padding: 1rem;
+  .admin-dashboard-header {
+    display: flex;
+    padding-bottom: 1rem;
+    .admin-dashboard-heading {
+      color: white;
+    }
+    justify-content: space-between;
+    .admin-dashboard-leftcontainer {
+      display: flex;
+      gap: 2rem;
+    }
+  }
 
   .admin-dashboard-content {
   }
