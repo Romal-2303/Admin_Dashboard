@@ -7,6 +7,7 @@ import PolarAreaChart from "../../Components/graphs/PolarAreaChart/PolarAreaChar
 import TaskTile from "./TaskTile/TaskTile.tsx";
 import TopPerformers from "../../Components/graphs/TopPerformers/TopPerformers.tsx";
 import PieChart from "../../Components/graphs/PieChart/PieChart.tsx";
+import OverviewTile from "./OverviewTile/OverviewTile.tsx";
 
 interface statsTileProps {
   header?: string;
@@ -57,6 +58,15 @@ const AdminPage = () => {
             percentValue={tile.percentValue}
           />
         ))}
+      </div>
+      <div
+        className={`${styles["grid-columns-4"]} ${classes["overview-revenue-target-container"]}`}
+      >
+        <div className={`${styles["column-span-1"]} ${styles["card"]}`}>
+          <OverviewTile />
+        </div>
+        <div className={`${styles["column-span-2"]} ${styles["card"]}`}>b</div>
+        <div className={`${styles["column-span-1"]} ${styles["card"]}`}>c</div>
       </div>
       <div
         className={`${styles["grid-columns-4"]} ${classes["polar-map-container-parent"]}`}

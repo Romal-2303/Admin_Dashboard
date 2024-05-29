@@ -1,0 +1,28 @@
+.overview-tile-container {
+  font-family: "Archivo", sans-serif;
+
+  .overview-content-container {
+    .separator {
+      width: 100%;
+      border-bottom: 1px solid #7f7f7f;
+    }
+    .content-list-container {
+      display: flex;
+      justify-content: space-between;
+      padding: 1rem 0rem;
+
+      .value-text-container {
+        .value {
+          color: #b8b8b8;
+          font-size: 20px;
+          letter-spacing: 1px;
+        }
+        .text {
+          color: #7f7f7f;
+          margin-top: 0.4rem;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
