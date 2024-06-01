@@ -8,12 +8,53 @@
 
   padding: 1rem;
   background-color: $darkNavyBlue;
+  .admin-dashboard-header {
+    display: flex;
+    padding-bottom: 1rem;
+    .admin-dashboard-heading {
+      color: white;
+    }
+    justify-content: space-between;
+    .admin-dashboard-leftcontainer {
+      display: flex;
+
+      .admin-dashboard-daterange {
+        .datePicker {
+          width: 60%;
+          padding: 0.2rem;
+          border-radius: 0.3rem;
+          border: none;
+        }
+      }
+      .admin-dashboard-downloadbutton {
+        margin-right: 2vw;
+        .custom-class {
+          background-color: hwb(220 58% 3%);
+          padding: 0.2rem;
+          border-radius: 0.3rem;
+          border: none;
+        }
+      }
+    }
+  }
 
   .admin-dashboard-content {
   }
 
   .overview-revenue-target-container {
     margin-top: 1rem;
+
+    .revenue-chart-container {
+      .revenue-header-container {
+        margin-bottom: -1rem;
+      }
+    }
+
+    .monthly-sales-chart-container {
+      .targets-header-container {
+        margin-bottom: -0.2rem;
+      }
+    }
   }
 
   .utilities-container {

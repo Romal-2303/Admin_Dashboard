@@ -11,10 +11,10 @@ const Layout = ({ children }: LayoutProps) => {
   return (
     <div className={classes["layout-container"]}>
       <Header />
-     <div className={classes["sidebar-webody-container"]}>
-      <Sidebar />
-     <main>{children}</main>
-     </div>
+      <div className={classes["sidebar-webody-container"]}>
+        <Sidebar />
+        <main>{children}</main>
+      </div>
     </div>
   );
 };
