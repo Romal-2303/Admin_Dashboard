@@ -2,43 +2,48 @@
 
 .admin-dashboard-container {
   width: calc(100vw - 200px);
-  // height: 100vw;
-  height: calc(100vh - 86px);
+  height: calc(100vh - 80px);
   overflow-y: scroll;
-
   padding: 1rem;
   background-color: $darkNavyBlue;
+  font-family: "Archivo", sans-serif;
+
   .admin-dashboard-header {
     display: flex;
     padding-bottom: 1rem;
     .admin-dashboard-heading {
-      color: white;
+      color: #b8b8b8;
+      font-size: 19px;
     }
     justify-content: space-between;
     .admin-dashboard-leftcontainer {
       display: flex;
 
       .admin-dashboard-daterange {
+        // border: 1px solid red;
         .datePicker {
-          width: 60%;
-          padding: 0.2rem;
+          // width: 65%;
+          padding: 0.55rem 0rem;
           border-radius: 0.3rem;
           border: none;
+          background-color: $lightNavyBlue;
+          color: #b8b8b8;
+          text-align: center;
+          letter-spacing: 1px;
+          margin-right: 0.5rem;
         }
       }
-      .admin-dashboard-downloadbutton {
-        margin-right: 2vw;
-        .custom-class {
-          background-color: hwb(220 58% 3%);
-          padding: 0.2rem;
+      .admin-dashboard-download-button {
+        .downloads-btn-container {
+          background-color: hwb(220 28% 12%);
+          padding: 0.5rem 0.8rem;
           border-radius: 0.3rem;
           border: none;
+          color: white;
+          letter-spacing: 0.3px;
         }
       }
     }
-  }
-
-  .admin-dashboard-content {
   }
 
   .overview-revenue-target-container {

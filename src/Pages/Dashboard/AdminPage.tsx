@@ -86,8 +86,11 @@ const AdminPage = () => {
               className={classes["datePicker"]}
             />
           </div>
-          <div className={classes["admin-dashboard-downloadbutton"]}>
-            <Button onClick={clickhandler} className={classes["custom-class"]}>
+          <div className={classes["admin-dashboard-download-button"]}>
+            <Button
+              onClick={clickhandler}
+              className={classes["downloads-btn-container"]}
+            >
               Downloads
             </Button>
           </div>
@@ -119,7 +122,7 @@ const AdminPage = () => {
           >
             Revenue
           </div>
-          <LineChart height={"310px"} />
+          <LineChart />
         </div>
         <div
           className={`${styles["column-span-1"]} ${styles["card"]} ${classes["monthly-sales-chart-container"]}`}
@@ -135,7 +138,7 @@ const AdminPage = () => {
             data={data}
             backgroundColor={backgroundColor}
             borderColor={borderColor}
-            height={"310px"}
+            height={"210px"}
           />
         </div>
       </div>

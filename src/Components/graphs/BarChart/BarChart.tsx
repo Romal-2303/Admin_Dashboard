@@ -84,7 +84,7 @@ const BarChart: React.FC<MyChartProps> = ({
 
   return (
     <div>
-      <Bar data={chartData} options={options} height={height} />
+      <Bar data={chartData} options={options} height={height} width={"200px"} />
     </div>
   );
 };
